@@ -1,0 +1,196 @@
+
+<DOCTYPE html>
+    <html>
+        <head>
+            <style>
+                body{
+                    background-color : whitesmoke ;
+                    font-family: "Garamond";
+                }
+                h1{
+                    font-size : 30pt ;
+
+                }
+                h2{
+                    font-size: 25pt;
+                }
+                h5{
+                    font-size: 18pt;
+                }
+                li{
+                    font-size : 20pt ;
+                }
+                div{
+                    margin-right : auto;
+                    margin-left : auto;
+                    margin-bottom : 75px;
+                }
+                button{
+                    font-size: 13pt;
+                    float: right;
+
+                    color: maroon;
+                    background-color: lightgray;
+                    margin: 15px;
+                }
+            
+            </style>
+        </head>
+
+            <body>
+
+ 
+                <h1 Style = "color: black" > How Successful Has the United States Been in Accomplishing Educational Sustainable Development Goals? </h1>
+                <a href="SDG3.html" >  <button >  SDG #3: Degrees  </button> </a>
+                <a href="SDG2.html" >  <button > SDG #2: Testing </button> </a>
+
+                <a href="SDG1.html" >  <button >  SDG #1: Funding  </button> </a>
+
+                <div>
+                    
+                </div>
+      
+                <h2 Style = "color: maroon" > Background: </h2>
+
+                    
+
+                        <img src ="sdgNoTitle.jpeg" width = "700" ; style="float:right"/> 
+                        <h3 Style = "color: black" > The United Nation's
+                            <a href="https://unfoundation.org/what-we-do/issues/sustainable-development-goals/?gclid=CjwKCAjwrJ-hBhB7EiwAuyBVXfgBjCmKzbb4QEAiTKd3Qy9DI3628RVgAIwS876XfyTEh_UxeWFd6hoCmKIQAvD_BwE" > Sustainable Development Goals </a>
+                             are a shared plan by the nations of the world to acheive a number of initiatives aiming to "end extreme poverty, reduce inequality, and protect the planet "by the year 2030. The Educational SDGs- located in Group 4- surround objectives for school and learning initiatives.
+                        </h3>
+                        <h3 Style = "color: black" > This is a final project for a Data Visualization Class at William & Mary. The data for this project was found <a href= https://www.kaggle.com/datasets/noriuk/us-educational-finances >here</a> for educational expenditure, <a href= 'https://www.nationsreportcard.gov/reading/?grade=8' > here </a> for testing scores, and  <a href= Source:https://ncses.nsf.gov/indicators/states/indicator/bachelors-degree-holders-per-25-44-year-olds >  here </a> for degree-holding stats. 
+                        </h3>
+                <div>
+                </div>
+                <h2 Style = "color: maroon" > Project Goals: </h2>
+
+                <h3 Style = "color: black" > - Look at the Status and Progress of 3 key parts of the educational SDGs in order to determine the extent of the US's states/regions successes and failures.
+                </h3>
+                <h3 Style = "color: black" > - Visualize these successes and failures into a set of visualizations that are interpretable by the larger public.
+                </h3>
+                <h3 Style = "color: black" > - Compare the states and regions of the United States to see which are doing comparatively better and worse.
+                </h3>
+                <h3 Style = "color: black" > - Show the public, educators, and policy-makers which areas should be focused on.
+                </h3>
+
+            <div>
+
+            </div>
+            
+                <h2 Style = "color: maroon" > Part 1: Increasing Educational Funding </h2>
+                <h3 Style = "color: black" > 1st Educational SDG Subgoal: raise governmental funding for schools. 
+                </h3>
+                <h4 Style = "color: black" > Quantifying the Goal: In order to visualize this goal, I incorporated the educational expenditure dataset into my master dataset and then divided total expenditure by the number of students to find the educational expenditure per student. I used the racing bar plot package of plotly to see the evolution of the top spending states over a period from 2005 - 2016. I looked for key increases or decreases, as well as differences in the top states shown between each criteria.
+                </h4>
+
+            <div>
+                
+
+                <img src ="expTotal.GIF" width = "49%"style="float:right"/> 
+                
+                <img src ="expPS.gif" width = "49%"/> 
+
+            <h6 style="color : grey" > Data Source: <a href= https://www.kaggle.com/datasets/noriuk/us-educational-finances >U.S. Educational Finances, Kaggle</a>  </h6>
+            <h4 Style = "color: black" > Note: these graphs also come in the form of interactive webpages! Click <a href= "expenditureTotal.html"> here</a> for the interactive total expenditure racing plot and <a href= "expenditurePS.html"> here </a> for the interactive expenditure per student racing bar plot! 
+            </h4>
+            
+            </div>
+            <div>
+
+            </div>
+            <h5 Style = "color: navy" > SDG #1 Conclusions: </h5>
+
+            <h4 Style = "color: black" > -  The Expenditure per student section was dominated by the Northeast and Mid-Atlantic states. The only three states to appear in the top 10 outside of these regions are Alaska, Wyoming, and North Dakota. The Southeast and Southwest were not represented at all.   
+            </h4>
+            <h4 Style = "color: black" > -  The Expenditure per student section showed universal progress in spending towards education.
+            </h4>
+            <h4 Style = "color: black" > -  Michigan had a drop from $20,490,000 to $18,000,000 in the total expenditure. 
+            </h4>
+            <h4 Style = "color: black" > - The Northwest is the only region not represented in the top total expenditures.
+            </h4>
+            <h5 Style = "color: black" >  Overall Progress: Success (with a few caveats)
+            </h5>
+            <div></div>
+
+            
+                <h2 Style = "color: maroon" > Part 2: Acheiving Gender Equality in Testing </h2>
+                <h3 Style = "color: black" > 2nd Educational SDG Subgoal: Move closer to educational gender equality. 
+                </h3>
+                <h4 Style = "color: black" > Quanifying the Goal: After adding the Nation's Report Card to my master data set, I compared the first (2005) and last (2015) recording periods in order to see the progress of gender equality in mathematics and reading tests.
+                </h4>
+
+                <img src ="figStartingReading2 (1).png" width = "40%"style="float:left"/> 
+                
+                <img src ="figEndReading2 (2).png" width = "40%"/>
+
+
+
+                <img src ="figStartingMath4 (2).png" width = "40%"style="float:left"/> 
+                
+                <img src ="figEndMath2.png" width = "40%"/>
+
+                <h6 style="color : grey" > Data Source: <a href= 'https://www.nationsreportcard.gov/reading/?grade=8' > Nation's Report Card for 8th Graders</a>  </h6>
+                <div></div>
+
+                
+                <h5 Style = "color: navy" > SDG #2 Conclusions: </h5>
+
+                <h3 Style = "color: black" > -  Minimal progress overall for both reading and mathematics scoring gender equality.
+                </h3>
+                <h3 Style = "color: black" > -  Progress seen additionally in score improvement, especially noted in outliers. 
+                </h3>
+                <h3 Style = "color: black" > -  In mathematics testing, outliers DC and Massachusetts moved further from gender equality during the recording period, while Minnesota made progress.
+                </h3>
+                <h3 Style = "color: black" > -  In reading testing, outliers all made minimal progress towards the gender equality line. 
+                </h3>
+                <h5 Style = "color: black" >  Overall Progress: Mixed 
+                </h5>
+                <div>
+
+                </div>
+                
+                    <h2 Style = "color: maroon" > Part 3: Raising Degree Completion </h2>
+                    <h3 Style = "color: black" > 3st Educational SDG Subgoal: increase the amount of adults holding secondary and higher education degrees
+                    </h3>
+                    <h4 Style = "color: black" > Quantifying the Goal: I utilized the dataset of population percentages with at least high school and bachelor's degrees. After adding the dataset to my master dataset, I created averages based on the regions manually in order to easily see divisiosn between regions and increase legibility when compared to a graph looking at states. Line graphs below show the comparison of adults (25-44 years old) in each region with at least each type of degree.
+                        </h4>
+                <img src ="hsdegree (1).png" width = "40%" style="float:left"/>
+
+                <img src ="finalBach.png" width = "40%"/> 
+                
+
+                <h6 style="color : grey" > Data Source: <a href= Source:https://ncses.nsf.gov/indicators/states/indicator/bachelors-degree-holders-per-25-44-year-olds >  Bachelor's Degree Holders among Individuals 25–44 Years Old </a>  </h6>
+                <div></div>
+
+                
+                <h5 Style = "color: navy" > SDG #3 Conclusions: </h5>
+
+                <h4 Style = "color: black" > -  Percent of adults holding each of the degrees studied has increased in all regions from the beginning to the end of the collection period. 
+                </h4>
+                <h4 Style = "color: black" > -  Northeast region consistently had the highest percentage of adults holding at least high school degrees, while Mid-Atlantic consistently had the highest percentage of adults holding at least bachelor's degrees.
+                </h4>
+                <h4 Style = "color: black" > -  Southwest region consistently had the lowest percentage of adults holding at least high school degrees, while Southwest and Southeast consistently had the lowest percentage of adults holding at least bachelor's degrees.
+                </h4>
+                <h5 Style = "color: black" >  Overall Progress: Success
+                </h5>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+                <h2 Style = "color: maroon" > Overall Conclusions: </h2>
+
+                <h3 Style = "color: black" > - Though all of the SDGs I looked at had some form of success during the recording period in the United States, the level of success definitely varied.
+                </h3>
+                <h3 Style = "color: black" > - Educational Expenditure: This SDG had an overall success; however, a few caveats keep it from being a total success. These include the fact that it was neccessary to limit this visualization to only the top 10 states for each category and that there were instances where states lowered their funding during the period. The limitation of the states inherantly limits the amount of cases that I could see; there could be other failures hidden. The fact that some regions were absent from one or both suggests that they may have a regional issues with funding.
+                </h3>
+                <h3 Style = "color: black" > - Scoring: Overall scoring has improved, including moving slightly closer to gender equality in standardized scores. However, especially in mathematics scores, there were mixed results, with some of the outliers moving away from gender equality instead of towards it. Additionally, many of the other unmarked points had minimal change towards the gender equality line. Thus, the success for scoring was mixed.
+                </h3>
+                <h3 Style = "color: black" > - Degrees: This was the most total success out of the SDGs I looked at. All regions improved their percentages during the period, so this can be classified as a complete success.
+                </h3>
+            </body>
+        
+    </html>
+</DOCTYPE>
